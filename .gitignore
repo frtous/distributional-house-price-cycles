@@ -1,0 +1,34 @@
+# .gitignore -- files Git must never upload.
+# Keep this file in place BEFORE copying anything into the repository:
+# a large file committed by mistake stays in the history even after you delete it.
+
+# Data that cannot go online (too large, or not openly licensed).
+# Everything in data/restricted/ and data/derived/ stays on this computer,
+# except the README in each. master.do rebuilds data/derived/ from the
+# workbooks in data/restricted/ (option rebuild_derived).
+data/restricted/*
+!data/restricted/README.md
+data/derived/*
+!data/derived/README.md
+
+# Files the code creates: master.do rebuilds them.
+data/intermediate/
+output/
+
+# Stata leftovers
+*.log
+*.smcl
+*.gph
+*.stswp
+*.tmp
+
+# Python leftovers
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Office lock files and system files
+~$*
+Thumbs.db
+desktop.ini
+.DS_Store
