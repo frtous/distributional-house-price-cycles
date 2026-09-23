@@ -29,7 +29,7 @@ global root "D:/GitHub/distributional-house-price-cycles"
 
 global code       "$root/code"
 global raw        "$root/data/raw"            // raw downloads (on GitHub)
-global derived    "$root/data/derived"        // small derived inputs (on GitHub)
+global derived    "$root/data/derived"        // small derived inputs (not on GitHub)
 global restricted "$root/data/restricted"     // large or licensed files (not on GitHub)
 global inter      "$root/data/intermediate"   // created by the code (not on GitHub)
 global figures    "$root/output/figures"
